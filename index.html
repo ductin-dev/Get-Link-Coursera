@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link href="static/css/all.css" rel="stylesheet" />
+    <style>
+      body {
+        width: 400px;
+      }
+      .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 22px;
+        height: 22px;
+      }
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        margin: 8px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #fff transparent transparent transparent;
+      }
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Content -->
+    <div
+      class="container"
+      style="justify-content: center; margin-top: 10px; align-items: center"
+    >
+      <div id="edwuitqe" class="alert alert-success" role="success">
+        Link share coursera của bạn là:
+        <div class="input-group mt-2">
+          <input
+            id="result"
+            type="text"
+            class="form-control"
+            value="đang tải ..."
+          />
+          <div class="input-group-append">
+            <span
+              id="copyBtn"
+              class="input-group-text"
+              id="basic-addon2"
+              style="cursor: copy"
+              >Copy link</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        id="fejfeoif"
+        class="alert alert-danger"
+        role="alert"
+        style="display: none"
+      >
+        Không thể get link, hãy đảm bảo bạn đang ở tab
+        <strong>My submission</strong> và thử lại bằng nút
+        <strong>Reload</strong> bên dưới
+      </div>
+      <button
+        id="reloadBtn"
+        class="btn btn-primary"
+        style="margin-bottom: 1rem; width: 100%"
+      >
+        Reload
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1)">
+        © 2020
+        <a class="text-dark" href="https://www.satdevelop.com/" target="_blank"
+          >www.satdevelop.com</a
+        >&nbsp;
+        <a
+          class="social-button facebook"
+          href="https://www.facebook.com/satfomacej/"
+          target="_blank"
+          style="color: rgb(0, 65, 43)"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="popup.js"></script>
+
+    <!-- JS -->
+    <link href="static/js/all.css" rel="stylesheet" />
+  </body>
+</html>
